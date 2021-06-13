@@ -1,0 +1,31 @@
+{
+  "name": "amazon-spreadsheet-bookmarklet",
+  "version": "1.0.0",
+  "description": "Scrape info from Amazon.com/ca for a product spreadsheet",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JoeeBritton/amazon-spreadsheet-bookmarklet.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint . --fix",
+    "format": "mkdir out & uglifyjs index.js --no-annotations --keep-fnames > out/uglified.js && node format.js",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.js": [
+      "./node_modules/.bin/eslint --fix"
+    ]
+  },
+  "author": "Joseph Britton",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4"
+  },
+  "dependencies": {
+    "uglify-js": "^3.13.5"
+  }
+}
