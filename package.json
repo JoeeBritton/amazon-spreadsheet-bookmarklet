@@ -1,7 +1,7 @@
 {
   "name": "amazon-spreadsheet-bookmarklet",
   "version": "1.0.0",
-  "description": "Scrape info from Amazon.com/ca for a product spreadsheet",
+  "description": "A bookmarklet to scrape basic info from Amazon product pages for use in a spreadsheet.",
   "main": "index.js",
   "repository": {
     "type": "git",
